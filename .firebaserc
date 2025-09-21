@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "prod": "controlease-fe79c",
+    "test": "controlease-test"
+  },
+  "targets": {},
+  "etags": {}
+}
