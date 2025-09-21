@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@config '../tailwind.config.js';
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+@plugin '../hero.ts';
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --color-base: #2c003d;
+  --color-accent-cyan: #00e4ff;
+  --color-accent-neon: #ff0077;
+  --color-mate-white: #faf9f6;
+  --color-error: #ff0000;
+  --color-success: #00ff00;
+  --color-warning: #ffff00;
+  --color-info: #00ffff;
+}
+
+.dark {
+  --color-base: #0b0014;
+  --color-accent-cyan: #7eefff;
+  --color-accent-neon: #ff66a3;
+  --color-mate-white: #0f0f0f;
+  --color-error: #ff6666;
+  --color-success: #33cc66;
+  --color-warning: #ffd866;
+  --color-info: #66ffff;
+}
