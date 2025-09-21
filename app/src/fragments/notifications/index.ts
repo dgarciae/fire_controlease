@@ -1,0 +1,1 @@
+export { NotificationsIndexPage } from "./views";

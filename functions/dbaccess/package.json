@@ -1,0 +1,17 @@
+{
+  "name": "dbaccess-function",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "main": "./index.js",
+  "scripts": {
+    "build": "tsc --config .config/tsconfig.json",
+    "lint": "eslint . --ext ts --report-unused-disable-directives --max-warnings 0 --config .config/.eslintrc.cjs",
+    "format": "prettier --write . --config .config/prettier.config.mjs"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.5.0",
+    "firebase-functions": "^6.0.1",
+    "shared-code": "1.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "shared-code",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "main": "./index.ts",
+  "exports": {
+    "./utils": "./utils/index.js",
+    "./db": "./db/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext ts"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.5.0",
+    "firebase-functions": "^6.0.1"
+  }
+}
