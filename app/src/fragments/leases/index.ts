@@ -1,0 +1,1 @@
+export { LeasesIndexPage } from "./views";

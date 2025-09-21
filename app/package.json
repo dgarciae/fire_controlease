@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config .config/vite.config.js",
+    "build": "tsc -p .config/tsconfig.json && vite build --config .config/vite.config.js",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --config .config/.eslintrc.cjs",
+    "preview": "vite preview --config .config/vite.config.js",
+    "format": "prettier --write . --config .config/prettier.config.mjs"
+  },
+  "dependencies": {
+    "@heroui/react": "^2.8.2",
+    "@tanstack/react-query": "^5.85.5",
+    "@tanstack/react-router": "^1.131.27",
+    "framer-motion": "^12.23.12",
+    "jwt-decode": "^4.0.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-toastify": "^11.0.5",
+    "tailwindcss": "^4.1.12",
+    "zustand": "^5.0.8"
+  }
+}
